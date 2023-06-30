@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="content-section-a">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+            <h1>Select one answer for each of the questions below. After selecting your choices, click submit to see your results!
+            </h1>
+          <form method = "post" action = "/results">
+            <h2>Pick a Weather</h2>
+                <input type="checkbox" id="hot" name="weather" value="mordor">
+                <label for="weather">Hot</label><br>
+                <input type="checkbox" id="sunny" name="weather" value="shire">
+                <label for="weather">Sunny</label><br>
+                <input type="checkbox" id="snowy" name="weather" value="rohan">
+                <label for="weather">Snowy</label><br>
+                <input type="checkbox" id="misty" name="weather" value="rivendell">
+                <label for="weather">Misty</label><br>
+                <input type="checkbox" id="cloudy" name="weather" value="gondor">
+                <label for="weather">Cloudy</label><br>
+            <h2>Pick a Hobby</h2>
+                <input type="checkbox" id="gardening" name="hobby" value="shire">
+                <label for="hobby">Gardening</label><br>
+                <input type="checkbox" id="museum" name="hobby" value="rivendell">
+                <label for="hobby">Visiting a Museum</label><br>
+                <input type="checkbox" id="chess" name="hobby" value="gondor">
+                <label for="hobby">Playing Chess</label><br>
+                <input type="checkbox" id="horse" name="hobby" value="rohan">
+                <label for="hobby">Horseback Riding</label><br>
+                <input type="checkbox" id="wrestling" name="hobby" value="mordor">
+                <label for="hobby">Wrestling</label><br>
+            <h2>Pick a Treasure</h2>
+                <input type="checkbox" id="wisdom" name="treasure" value="rivendell">
+                <label for="treasure">Wisdom</label><br>
+                <input type="checkbox" id="honor" name="treasure" value="gondor">
+                <label for="treasure">Honor</label><br>
+                <input type="checkbox" id="gold" name="treasure" value="mordor">
+                <label for="treasure">Gold</label><br>
+                <input type="checkbox" id="food" name="treasure" value="shire">
+                <label for="treasure">Food</label><br>
+                <input type="checkbox" id="loyalty" name="treasure" value="rohan">
+                <label for="treasure">Loyalty</label><br>
+            <br>
+            <input type="submit" value="Submit"/>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.content-section-a -->
+{% endblock %}
+
